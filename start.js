@@ -15,12 +15,14 @@ ChartComponent.prototype._createWidget = function() {
           "container_id": this._empty_div,
           "autosize": true,
           "symbol": this._state.symbol,
-          "interval": "D",
+	  "watchlist": this._state.watchlist,
+          "interval": "W",
           "timezone": "Etc/UTC",
           "theme": "Black",
           "style": "1",
+	  "save_image": false,
           "locale": "en",
-          "toolbar_bg": "#f1f3f6",
+//          "toolbar_bg": "#f1f3f6",
           "hideideas": true
     });
 }
