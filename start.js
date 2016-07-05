@@ -62,123 +62,110 @@ MiniWidgetComponent.prototype._createWidget = function() {
 
 $(function(){
 
-var ZmyLayout = new GoldenLayout({
-    content: [{
-        type: 'row',
-        content: [{
-            type: 'column',
-            width: 61.803,
-            content: [{
-                type: 'component',
-                componentName: 'example',
-                componentState: { text: 'A' }
-            }]
-        }, {
-            type: 'column',
-            width: 38.197,
-            content: [{
-                type: 'component',
-                componentName: 'example',
-                componentState: { text: 'B' },
-                height: 61.803
-            }, {
-                type: 'row',
-                content: [{
-                    type: 'column',
-                    width: 61.803,
-                    content: [{
-                        type: 'row',
-                        content: [{
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'C' },
-                            width: 61.803,
-                        }, {
-                            type: 'column',
-                           content: [{
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'D' },
-                            height: 61.803,
-                           },{
-                            type: 'row',
-                             content:[{
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'E' },
-                           },{
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'F' },
-                            width: 61.803,
-                           }]
-                           }]
-                        }]
-                    }, {
-                        type: 'component',
-                        componentName: 'example',
-                        componentState: { text: 'G' },
-                        height: 38.197,
-                    }]
-                }, {
-                    type: 'component',
-                    componentName: 'example',
-                    componentState: { text: 'H' },
-                    width: 61.803
-                }]
-            }]
-        }]
-    }]
-});
-
-
 var myLayout = new GoldenLayout({
     content: [{
         type: 'row',
         content: [{
-                type: 'row',
+            type: 'row',
+            content: [{
+                type: 'column',
                 content: [{
-                    type: 'column',
+                    type: 'row',
                     content: [{
                         type: 'row',
                         content: [{
                             type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'C' },
+                            componentName: 'miniwidget',
+                            componentState: {
+                                tabs: [
+                                    'Indices'
+                                ],
+                                symbols: {
+                                    'Indices': [
+                                        'INDEX:NZD',
+                                        'INDEX:FTSE',
+                                        'INDEX:SPX',
+                                        'INDEX:TXSX'
+                                    ]
+                                }
+                            }
                         }, {
-                            type: 'column',
-                            height: 16,
-                           content: [{
-                            height: 16,
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'D' },
-                           },{
-                            type: 'row',
-                             content:[{
                             type: 'component',
                             componentName: 'miniwidget',
-                            componentState: { 
-                                tabs: [ 'Commodities' ],
-                                symbols: { 'Commodities': [ 'GC1!' ] } }
-                           },{
-                            type: 'component',
-                            componentName: 'miniwidget',
-                            componentState: { 
-                                tabs: [ 'Forex' ],
-                                symbols: { 'Forex': [ 'FX:GBPCAD', 'FX:GBPNZD', 'GBPEUR', 'FX:GBPUSD' ] } }
-                           }]
-                           }]
+                            componentState: {
+                                tabs: [
+                                    'Misc'
+                                ],
+                                symbols: {
+                                    'Misc': [
+                                        'BTCUSD'
+                                    ]
+                                }
+                            }
                         }]
                     }, {
-                        type: 'component',
-                        componentName: 'chart',
-                        componentState: { symbol: 'VEA' },
-                        height: 38.197,
+                        type: 'row',
+                        content: [{
+                            type: 'component',
+                            componentName: 'miniwidget',
+                            componentState: {
+                                tabs: [
+                                    'Commodities'
+                                ],
+                                symbols: {
+                                    'Commodities': [
+                                        [
+                                            'Gold',
+                                            'GC1!'
+                                        ],
+                                        [
+                                            'Silver',
+                                            'SI1!'
+                                        ],
+                                        [
+                                            'Iron',
+                                            'ITI1!'
+                                        ],
+                                        [
+                                            'Oil',
+                                            'CL1!'
+                                        ]
+                                    ]
+                                }
+                            }
+                        }, {
+                            type: 'component',
+                            componentName: 'miniwidget',
+                            componentState: {
+                                tabs: [
+                                    'Forex'
+                                ],
+                                symbols: {
+                                    'Forex': [
+                                        'FX:GBPCAD',
+                                        'FX:GBPNZD',
+                                        'GBPEUR',
+                                        'FX:GBPUSD'
+                                    ]
+                                }
+                            }
+                        }]
                     }]
+                }, {
+                    type: 'component',
+                    componentName: 'chart',
+                    componentState: {
+                        symbol: 'VEA',
+                        watchlist: [
+                            'AMEX:VWO',
+                            'LSE:VFEM'
+                        ]
+                    },
+                    height: 44,
                 }]
             }]
         }]
+    }]
 });
 
 //    myLayout.registerComponent( 'stockChart', StockChartComponent );
