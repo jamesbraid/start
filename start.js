@@ -60,58 +60,7 @@ MiniWidgetComponent.prototype._createWidget = function() {
 
 }
 
-
-
-/********************************
- * * Initialise Layout
- * ********************************/
 $(function(){
-    var XmyLayout = new GoldenLayout({
-        content: [{
-            type: 'row',
-            content: [{
-                type: 'column',
-                content: [{
-                        type: 'row',
-                        content: [{
-                            type: 'component',
-                            componentName: 'example',
-                            componentState: { text: 'r0' }
-                        }, {
-                            type: 'column',
-                            content: [{
-                                type: 'component',
-                                componentName: 'example',
-                                componentState: { text: 'g0' }
-                            }, {
-                                type: 'component',
-                                componentName: 'example',
-                                componentState: { text: 'g1' }
-                            }]
-                    }, {
-                        type: 'component',
-                        componentName: 'example',
-                        componentState: { text: 'r1' }
-                    }]
-                }]
-            }]
-        }]
-    });
-
-    var YmyLayout = new GoldenLayout({
-        content: [{
-            type: 'column', 
-            content: [{
-                type: 'component',
-                componentName: 'example',
-                componentState: { text: 'r0' }
-            }, {
-                type: 'component',
-                componentName: 'example',
-                componentState: { text: 'r1' }
-            }]
-        }]
-    });
 
 var ZmyLayout = new GoldenLayout({
     content: [{
