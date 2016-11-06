@@ -82,10 +82,10 @@ var myLayout = new GoldenLayout({
                                 ],
                                 symbols: {
                                     'Indices': [
-                                        'INDEX:TXSX'
+                                        'INDEX:TXSX',
                                         'INDEX:FTSE',
                                         'INDEX:NZD',
-                                        'INDEX:SPX',
+                                        'INDEX:SPX'
                                     ]
                                 }
                             }
@@ -145,7 +145,8 @@ var myLayout = new GoldenLayout({
                                         'FX:GBPCAD',
                                         'FX:GBPNZD',
                                         'GBPEUR',
-                                        'FX:GBPUSD'
+                                        'FX:GBPUSD',
+                                        'FX:USDCAD',
                                     ]
                                 }
                             }
@@ -160,7 +161,7 @@ var myLayout = new GoldenLayout({
                             'AMEX:VEA',
                             'AMEX:VWO',
                             'LSE:VFEM',
-                            'TSX:XIC
+                            'TSX:XIC'
                         ]
                     },
                     height: 44,
