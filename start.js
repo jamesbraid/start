@@ -171,7 +171,6 @@ var myLayout = new GoldenLayout({
     }]
 });
 
-//    myLayout.registerComponent( 'stockChart', StockChartComponent );
     myLayout.registerComponent( 'example', function( container, state ){ container.getElement().html( '<h2>' + state.text + '</h2>'); });
     myLayout.registerComponent('miniwidget', MiniWidgetComponent);
     myLayout.registerComponent('chart', ChartComponent);
