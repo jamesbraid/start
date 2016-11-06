@@ -155,10 +155,12 @@ var myLayout = new GoldenLayout({
                     type: 'component',
                     componentName: 'chart',
                     componentState: {
-                        symbol: 'VEA',
+                        symbol: 'TSX:XIC',
                         watchlist: [
+                            'AMEX:VEA',
                             'AMEX:VWO',
-                            'LSE:VFEM'
+                            'LSE:VFEM',
+                            'TSX:XIC
                         ]
                     },
                     height: 44,
