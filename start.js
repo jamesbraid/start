@@ -82,10 +82,10 @@ var myLayout = new GoldenLayout({
                                 ],
                                 symbols: {
                                     'Indices': [
-                                        'INDEX:NZD',
-                                        'INDEX:FTSE',
-                                        'INDEX:SPX',
                                         'INDEX:TXSX'
+                                        'INDEX:FTSE',
+                                        'INDEX:NZD',
+                                        'INDEX:SPX',
                                     ]
                                 }
                             }
