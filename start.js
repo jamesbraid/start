@@ -177,3 +177,4 @@ var myLayout = new GoldenLayout({
     myLayout.init();
 });
 
+
