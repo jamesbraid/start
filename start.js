@@ -2,7 +2,6 @@ ChartComponent = function(container, state) {
     this._container = container;
     this._state = state;
     this._widget = null;
-
     this._container.on('open', this._createWidget.bind(this));
 }
 
@@ -29,16 +28,13 @@ ChartComponent.prototype._createWidget = function() {
 
 
 MiniWidgetComponent = function(container, state) {
-
     this._container = container;
     this._state = state;
     this._widget = null;
-
     this._container.on('open', this._createWidget.bind(this));
 }
 
 MiniWidgetComponent.prototype._createWidget = function() {
-
     this._empty_div = TradingView.gId();
     this._container.getElement().append('<div id=' + this._empty_div + '></div>');
 
@@ -56,8 +52,7 @@ MiniWidgetComponent.prototype._createWidget = function() {
         "width": '100%',
         "height": '100%',
         "locale": "en"
-});
-
+    });
 }
 
 $(function(){
@@ -77,9 +72,7 @@ var myLayout = new GoldenLayout({
                             type: 'component',
                             componentName: 'miniwidget',
                             componentState: {
-                                tabs: [
-                                    'Indices'
-                                ],
+                                tabs: [ 'Indices' ],
                                 symbols: {
                                     'Indices': [
                                         'INDEX:TXSX',
@@ -93,9 +86,7 @@ var myLayout = new GoldenLayout({
                             type: 'component',
                             componentName: 'miniwidget',
                             componentState: {
-                                tabs: [
-                                    'Misc'
-                                ],
+                                tabs: [ 'Misc' ],
                                 symbols: {
                                     'Misc': [
                                         'BTCUSD'
@@ -109,27 +100,13 @@ var myLayout = new GoldenLayout({
                             type: 'component',
                             componentName: 'miniwidget',
                             componentState: {
-                                tabs: [
-                                    'Commodities'
-                                ],
+                                tabs: [ 'Commodities' ],
                                 symbols: {
                                     'Commodities': [
-                                        [
-                                            'Gold',
-                                            'GC1!'
-                                        ],
-                                        [
-                                            'Silver',
-                                            'SI1!'
-                                        ],
-                                        [
-                                            'Iron',
-                                            'ITI1!'
-                                        ],
-                                        [
-                                            'Oil',
-                                            'CL1!'
-                                        ]
+                                        [ 'Gold', 'GC1!' ],
+                                        [ 'Silver', 'SI1!' ],
+                                        [ 'Iron', 'ITI1!' ],
+                                        [ 'Oil', 'CL1!' ]
                                     ]
                                 }
                             }
@@ -137,9 +114,7 @@ var myLayout = new GoldenLayout({
                             type: 'component',
                             componentName: 'miniwidget',
                             componentState: {
-                                tabs: [
-                                    'Forex'
-                                ],
+                                tabs: [ 'Forex' ],
                                 symbols: {
                                     'Forex': [
                                         'FX:GBPCAD',
@@ -176,5 +151,3 @@ var myLayout = new GoldenLayout({
     myLayout.registerComponent('chart', ChartComponent);
     myLayout.init();
 });
-
-
