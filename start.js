@@ -57,78 +57,70 @@ MiniWidgetComponent.prototype._createWidget = function() {
 
 $(function(){
 
-var myLayout = new GoldenLayout({
-    content: [{
-        type: 'row',
+    var myLayout = new GoldenLayout({
         content: [{
-            type: 'row',
+            type: 'column',
             content: [{
-                type: 'column',
+                type: 'row',
                 content: [{
-                    type: 'row',
-                    content: [{
-                        type: 'row',
-                        content: [{
-                            type: 'component',
-                            componentName: 'miniwidget',
-                            componentState: {
-                                tabs: [ 'Indices' ],
-                                symbols: {
-                                    'Indices': [
-                                        'INDEX:TXSX',
-                                        'INDEX:FTSE',
-                                        'INDEX:NZD',
-                                        'INDEX:SPX'
-                                    ]
-                                }
-                            }
-                        }, {
-                            type: 'component',
-                            componentName: 'miniwidget',
-                            componentState: {
-                                tabs: [ 'Misc' ],
-                                symbols: {
-                                    'Misc': [
-                                        'BTCUSD'
-                                    ]
-                                }
-                            }
-                        }]
-                    }, {
-                        type: 'row',
-                        content: [{
-                            type: 'component',
-                            componentName: 'miniwidget',
-                            componentState: {
-                                tabs: [ 'Commodities' ],
-                                symbols: {
-                                    'Commodities': [
-                                        [ 'Gold', 'GC1!' ],
-                                        [ 'Silver', 'SI1!' ],
-                                        [ 'Iron', 'ITI1!' ],
-                                        [ 'Oil', 'CL1!' ]
-                                    ]
-                                }
-                            }
-                        }, {
-                            type: 'component',
-                            componentName: 'miniwidget',
-                            componentState: {
-                                tabs: [ 'Forex' ],
-                                symbols: {
-                                    'Forex': [
-                                        'FX:GBPCAD',
-                                        'FX:GBPNZD',
-                                        'GBPEUR',
-                                        'FX:GBPUSD',
-                                        'FX:USDCAD',
-                                    ]
-                                }
-                            }
-                        }]
-                    }]
+                    type: 'component',
+                    componentName: 'miniwidget',
+                    componentState: {
+                        tabs: [ 'Indices' ],
+                        symbols: {
+                            'Indices': [
+                                'INDEX:TXSX',
+                                'INDEX:FTSE',
+                                'INDEX:NZD',
+                                'INDEX:SPX'
+                            ]
+                        }
+                    }
                 }, {
                     type: 'component',
+                    componentName: 'miniwidget',
+                    componentState: {
+                        tabs: [ 'Misc' ],
+                        symbols: {
+                            'Misc': [
+                                'BTCUSD'
+                            ]
+                        }
+                    }
+                }, {
+                    type: 'component',
+                    componentName: 'miniwidget',
+                    componentState: {
+                        tabs: [ 'Commodities' ],
+                        symbols: {
+                            'Commodities': [
+                                [ 'Gold', 'GC1!' ],
+                                [ 'Silver', 'SI1!' ],
+                                [ 'Iron', 'ITI1!' ],
+                                [ 'Oil', 'CL1!' ]
+                            ]
+                        }
+                    }
+                }, {
+                    type: 'component',
+                    componentName: 'miniwidget',
+                    componentState: {
+                        tabs: [ 'Forex' ],
+                        symbols: {
+                            'Forex': [
+                                'FX:GBPCAD',
+                                'FX:GBPNZD',
+                                'GBPEUR',
+                                'FX:GBPUSD',
+                                'FX:USDCAD',
+                            ]
+                        }
+                    }
+                }]
+            }, {
+                type: 'row',
+                content: [
+                { type: 'component',
                     componentName: 'chart',
                     componentState: {
                         symbol: 'TSX:XIC',
@@ -138,13 +130,21 @@ var myLayout = new GoldenLayout({
                             'LSE:VFEM',
                             'TSX:XIC'
                         ]
-                    },
-                    height: 44,
-                }]
+                    }},
+                {type: 'component',
+                    componentName: 'chart',
+                    componentState: {
+                        symbol: 'VMW',
+                        watchlist: [
+                            'NVDA',
+                            'ANET',
+                        ]
+                    }}
+                ],
+                height: 60,
             }]
         }]
-    }]
-});
+    });
 
     myLayout.registerComponent( 'example', function( container, state ){ container.getElement().html( '<h2>' + state.text + '</h2>'); });
     myLayout.registerComponent('miniwidget', MiniWidgetComponent);
