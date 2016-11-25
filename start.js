@@ -108,11 +108,11 @@ $(function(){
                         tabs: [ 'Forex' ],
                         symbols: {
                             'Forex': [
-                                'FX:GBPCAD',
-                                'FX:GBPNZD',
-                                'GBPEUR',
-                                'FX:GBPUSD',
-                                'FX:USDCAD',
+                                'GBPCAD|3m',
+                                'GBPNZD|3m',
+                                'GBPEUR|3m',
+                                'GBPUSD|3m',
+                                'USDCAD|3m',
                             ]
                         }
                     }
