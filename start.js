@@ -141,7 +141,7 @@ $(function(){
                         ]
                     }}
                 ],
-                height: 60,
+                height: 45,
             }]
         }]
     });
