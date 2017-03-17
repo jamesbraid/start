@@ -83,8 +83,8 @@ $(function(){
                         tabs: [ 'Misc' ],
                         symbols: {
                             'Misc': [
-                                'BTCUSD!3m',
-                                'ETHUSD!3m'
+                                'BTCUSD|3m',
+                                'ETHUSD|3m'
                             ]
                         }
                     }
