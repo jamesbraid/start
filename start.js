@@ -85,7 +85,6 @@ $(function(){
                             'Misc': [
                                 'BTCUSD|3m',
                                 'ETHUSD|3m',
-                                'BTCCAD|3m',
                                 'ETHCAD|3m'
                             ]
                         }
