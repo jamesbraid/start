@@ -73,6 +73,7 @@ $(function(){
                                 'TVC:UKX',
                                 'INDEX:NZD',
                                 'INDEX:SPX'
+                                'INDEX:NDX'
                             ]
                         }
                     }
