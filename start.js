@@ -102,6 +102,7 @@ $(function(){
                             'Commodities': [
                                 [ 'Gold', 'GC1!' ],
                                 [ 'Silver', 'SI1!' ],
+                                [ 'Platinum', 'PT1!' ],
                                 [ 'Iron', 'ITI1!' ],
                                 [ 'Oil', 'CL1!' ]
                             ]
