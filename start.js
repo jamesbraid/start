@@ -115,10 +115,11 @@ $(function(){
                         symbols: {
                             'Forex': [
                                 'CADGBP|3m',
+                                'CADNZD|3m',
+                                'CADUSD|3m',
                                 'GBPNZD|3m',
                                 'GBPEUR|3m',
                                 'GBPUSD|3m',
-                                'CADUSD|3m',
                             ]
                         }
                     }
