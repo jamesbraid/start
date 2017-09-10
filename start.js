@@ -70,7 +70,7 @@ $(function(){
                         symbols: {
                             'Indices': [
                                 'INDEX:TXSX',
-                                'INDEX:FTSE',
+                                'TVC:UKX',
                                 'INDEX:NZD',
                                 'INDEX:SPX'
                             ]
