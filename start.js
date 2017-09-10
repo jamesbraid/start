@@ -70,10 +70,10 @@ $(function(){
                         symbols: {
                             'Indices': [
                                 'INDEX:TXSX',
-                                'TVC:UKX',
+                                'UKX',
                                 'INDEX:NZD',
                                 'INDEX:SPX',
-                                'INDEX:NDX'
+                                'NDX'
                             ]
                         }
                     }
