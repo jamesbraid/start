@@ -88,7 +88,8 @@ $(function(){
                                 'ETHUSD|3m',
                                 'XMRUSD|3m',
                                 'LTCUSD|3m',
-                                'DOGEBTC|3m'
+                                'VTCUSD|3m',
+                                'DOGEUSD|3m'
                             ]
                         }
                     }
