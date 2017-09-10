@@ -72,7 +72,7 @@ $(function(){
                                 'INDEX:TXSX',
                                 'TVC:UKX',
                                 'INDEX:NZD',
-                                'INDEX:SPX'
+                                'INDEX:SPX',
                                 'INDEX:NDX'
                             ]
                         }
