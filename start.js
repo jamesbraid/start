@@ -85,6 +85,8 @@ $(function(){
                         symbols: {
                             'Misc': [
                                 'BTCUSD|3m',
+                                'BCHUSD|1m',
+                                'BCHBTC|1m',
                                 'ETHUSD|3m',
                                 'XMRUSD|3m',
                                 'LTCUSD|3m',
